@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Baby, HeartCrack, Gift } from "lucide-react";
 import Navbar from "@/components/Navbar";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/home-bg.jpg";
 import birthIcon from "@/assets/birth-icon.jpg";
 import deathIcon from "@/assets/death-icon.jpg";
 
