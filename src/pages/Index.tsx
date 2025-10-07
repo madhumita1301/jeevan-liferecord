@@ -40,10 +40,9 @@ const Index = () => {
       
       {/* Hero Section */}
       <section 
-        className="relative bg-primary py-24 md:py-32 bg-cover bg-center"
+        className="relative py-24 md:py-32 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="absolute inset-0 bg-primary/90"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
