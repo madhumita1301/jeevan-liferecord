@@ -39,10 +39,11 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section 
-        className="relative py-24 md:py-32 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center blur-sm scale-105"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
