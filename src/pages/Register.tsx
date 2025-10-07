@@ -3,6 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Baby, HeartCrack } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import birthBg from "@/assets/birth-bg.jpg";
+import deathBg from "@/assets/death-bg.jpg";
 
 const Register = () => {
   return (
@@ -21,10 +23,15 @@ const Register = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-xl transition-all duration-300 animate-fade-in">
-              <CardHeader>
-                <div className="h-48 bg-gradient-to-br from-accent to-accent/80 rounded-lg flex items-center justify-center mb-4">
-                  <Baby className="h-24 w-24 text-accent-foreground" />
+            <Card className="hover:shadow-xl transition-all duration-300 animate-fade-in overflow-hidden">
+              <CardHeader className="relative">
+                <div 
+                  className="h-48 rounded-lg flex items-center justify-center mb-4 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${birthBg})` }}
+                >
+                  <div className="bg-white/90 p-4 rounded-full">
+                    <Baby className="h-16 w-16 text-accent" />
+                  </div>
                 </div>
                 <CardTitle className="text-2xl">Birth Registration</CardTitle>
                 <CardDescription className="text-base">
@@ -46,10 +53,15 @@ const Register = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              <CardHeader>
-                <div className="h-48 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center mb-4">
-                  <HeartCrack className="h-24 w-24 text-primary-foreground" />
+            <Card className="hover:shadow-xl transition-all duration-300 animate-fade-in overflow-hidden" style={{ animationDelay: "0.1s" }}>
+              <CardHeader className="relative">
+                <div 
+                  className="h-48 rounded-lg flex items-center justify-center mb-4 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${deathBg})` }}
+                >
+                  <div className="bg-white/90 p-4 rounded-full">
+                    <HeartCrack className="h-16 w-16 text-primary" />
+                  </div>
                 </div>
                 <CardTitle className="text-2xl">Death Registration</CardTitle>
                 <CardDescription className="text-base">
